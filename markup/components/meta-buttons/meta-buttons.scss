@@ -1,0 +1,39 @@
+.meta-buttons {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meta-button {
+  box-sizing: border-box;
+  width: 130px;
+  height: 50px;
+
+  text-align: center;
+  text-decoration: none;
+
+  border: 1px solid;
+  border-radius: 5px;
+
+  font-size: 20px;
+  line-height: 48px;
+  .fa {
+    margin-right: 5px;
+  }
+  &:hover {
+    color: #fff;
+  }
+  &--downloads {
+    color: $green;
+    &:hover {
+      background: $green;
+    }
+  }
+  &--likes {
+    color: $orange;
+    &:hover {
+      background: $orange;
+    }
+  }
+}

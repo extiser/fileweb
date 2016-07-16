@@ -1,0 +1,22 @@
+.vertical {
+  padding: 37px 0;
+  &--green {
+    background: url(%=static=%general/green-pattern.png) repeat;
+  }
+  &--orange {
+    background: url(%=static=%general/orange-pattern.png) repeat;
+  }
+  &__wrapper {
+    @extend .wrapper;
+  }
+  &__title {
+    @extend .title;
+    @extend .title--white;
+  }
+  &__list {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

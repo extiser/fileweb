@@ -1,0 +1,27 @@
+.top-menu {
+  &__list {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    padding: 10px 15px;
+
+    text-decoration: none;
+
+    color: $black;
+
+    font-size: 14px;
+    span {
+      border-bottom: 1px dashed $green;
+      padding-bottom: 3px;
+    }
+    &:hover {
+      color: #fff;
+      border-bottom-color: transparent;
+      border-radius: 5px;
+      background-color: $green;
+    }
+  }
+}

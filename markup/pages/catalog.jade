@@ -8,10 +8,11 @@ html(class="no-js", lang="ru")
   body
     main.main
       +header()
-      +vertical('Фильмы', 'vertical--green')
-      +horizontal()
-      +vertical('Игры', 'vertical--orange')
-      +horizontal('bottom')
+      .catalog
+        +catalog-list()
+        .catalog__wrapper
+          - for (var i = 0; i < 24; i++)
+            +block()
       +footer()
 
     //- Main scripts. You can replace it, but I recommend you to leave it here

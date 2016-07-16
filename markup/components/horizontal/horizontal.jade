@@ -1,0 +1,19 @@
+mixin horizontal(position)
+  .horizontal
+    .horizontal__wrapper
+      .horizontal__column
+        .horizontal__title Сериалы
+        - for (var i = 0; i < 5; i++)
+          +row()
+      .horizontal__column
+        .horizontal__title Музыка
+        - for (var i = 0; i < 5; i++)
+          +row()
+      - if (position != 'bottom')
+        .horizontal__column
+          .horizontal__title Софт
+          - for (var i = 0; i < 5; i++)
+            +row()
+      - else
+        .horizontal__column.horizontal__column--img
+          img(src="%=static=%images/content/robot.png" alt="")

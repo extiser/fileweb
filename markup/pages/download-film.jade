@@ -1,0 +1,30 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../components/include/include
+
+  head
+    +head(head.defaults)
+  body
+    main.main
+      +header()
+      .inside
+        .inside__wrapper
+          .left-sidebar
+            +film-poster
+            +likes
+            +info
+            +vk-widget
+
+          +content()
+
+          .right-sidebar
+            +meta-buttons
+            +file-support
+            +similar-downloads
+
+      +vertical('Популярные загрузки', 'vertical--orange')
+      +footer()
+
+    //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src='%=static=%js/main%=hash=%%=min=%.js')

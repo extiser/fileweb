@@ -1,0 +1,8 @@
+mixin vertical(title, classname)
+  .vertical(class="#{classname}")
+    .vertical__wrapper
+      .vertical__title #{title}
+
+      .vertical__list
+        - for (var i = 0; i < 6; i++)
+          +block()

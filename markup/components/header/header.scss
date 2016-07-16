@@ -1,0 +1,30 @@
+.header {
+  background-color: #fafafa;
+  padding: 14px 0;
+  &__wrapper {
+    display: flex;
+
+    @extend .wrapper;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    @include bg($logo);
+  }
+  &__slogan {
+    text-transform: uppercase;
+
+    color: #999696;
+
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1;
+    span {
+      display: block;
+
+      text-transform: none;
+
+      font-size: 12px;
+    }
+  }
+}

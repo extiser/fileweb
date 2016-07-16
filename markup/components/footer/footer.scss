@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 37px;
+
+  background: #2f2f2f;
+  &__wrapper {
+    display: flex;
+
+    @extend .wrapper;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-menu {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  &__item {
+    margin-right: 40px;
+
+    text-decoration: none;
+
+    color: #cfcfcf;
+
+    font-size: 14px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-privacy {
+  width: 100%;
+
+  text-align: center;
+
+  color: rgba(#cfcfcf, .11);
+
+  font-size: 12px;
+}

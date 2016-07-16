@@ -1,0 +1,17 @@
+.similar-downloads {
+  &__title {
+    margin-bottom: 15px;
+
+    text-transform: uppercase;
+
+    color: $green;
+
+    font-size: 14px;
+    font-weight: 700;
+  }
+  &__item {
+    padding-bottom: 18px;
+
+    border-top: 1px solid #e9e9e9;
+  }
+}

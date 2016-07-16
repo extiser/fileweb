@@ -1,0 +1,16 @@
+.horizontal {
+  padding: 37px 0;
+
+  background: url(%=static=%general/gray-pattern.png) repeat;
+  &__wrapper {
+    display: flex;
+
+    @extend .wrapper;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__title {
+    @extend .title;
+    @extend .title--green;
+  }
+}
