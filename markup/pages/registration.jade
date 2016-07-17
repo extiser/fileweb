@@ -8,11 +8,13 @@ html(class="no-js", lang="ru")
   body
     main.main
       +header()
-      .catalog
-        +catalog-list()
-        .catalog__wrapper
-          - for (var i = 0; i < 24; i++)
-            +block()
+      .registration
+        .inside__wrapper.inside__wrapper--nobg
+          +breadcrumbs
+        .registration__wrapper
+          +registration-form
+
+
       +footer()
 
     //- Main scripts. You can replace it, but I recommend you to leave it here

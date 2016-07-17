@@ -8,11 +8,23 @@ html(class="no-js", lang="ru")
   body
     main.main
       +header()
-      .catalog
-        +catalog-list()
-        .catalog__wrapper
-          - for (var i = 0; i < 24; i++)
-            +block()
+      .inside
+        .inside__wrapper.inside__wrapper--nobg
+          +breadcrumbs
+          +file-support-horizontal
+        .inside__wrapper
+          .left-sidebar
+            +landing-poster
+            +landing-list
+
+          +content('landing')
+
+          .right-sidebar
+            +meta-buttons
+            +info
+            +vk-widget
+
+
       +footer()
 
     //- Main scripts. You can replace it, but I recommend you to leave it here

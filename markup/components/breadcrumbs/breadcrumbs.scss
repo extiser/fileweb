@@ -1,3 +1,19 @@
 .breadcrumbs {
   width: 100%;
+  font-size: 12px;
+  &__item {
+    margin-right: 5px;
+
+    text-decoration: none;
+
+    color: rgba(#21292e, .8);
+    .fa {
+      position: relative;
+      top: -1px;
+
+      margin-right: 5px;
+
+      font-size: 9px;
+    }
+  }
 }

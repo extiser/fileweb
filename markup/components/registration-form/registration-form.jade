@@ -1,0 +1,13 @@
+mixin registration-form
+  .registration-form
+    .registration-form__left
+      img(src="%=static=%images/content/registration.png" alt="")
+    .registration-form__right
+      .registration-form__title Авторизация
+      .registration-form__text Для входа на сайт и снятия ограничений на скачивание файлов, введите номер мобильного телефона.
+
+      label.registration-form__label Введите Ваш номер телефона ниже
+      .registration-form__input
+        input(type="text" value="")
+      span.registration-form__hint Например: +79991115566
+      input(type="submit" value="Продолжить").registration-form__submit

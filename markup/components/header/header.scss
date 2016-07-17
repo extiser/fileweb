@@ -10,6 +10,9 @@
   }
   &__logo {
     @include bg($logo);
+    @media screen and (max-width: 1024px) {
+      order: 2;
+    }
   }
   &__slogan {
     text-transform: uppercase;
@@ -25,6 +28,10 @@
       text-transform: none;
 
       font-size: 12px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      display: none;
     }
   }
 }

@@ -9,6 +9,8 @@ html(class="no-js", lang="ru")
     main.main
       +header()
       .inside
+        .inside__wrapper.inside__wrapper--nobg
+          +breadcrumbs
         .inside__wrapper
           .left-sidebar
             +film-poster
@@ -27,4 +29,6 @@ html(class="no-js", lang="ru")
       +footer()
 
     //- Main scripts. You can replace it, but I recommend you to leave it here
+    script(src="https://yastatic.net/jquery/2.2.3/jquery.min.js")
+    
     script(src='%=static=%js/main%=hash=%%=min=%.js')

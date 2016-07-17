@@ -8,9 +8,19 @@
     @extend .wrapper;
     justify-content: space-between;
     align-items: flex-start;
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+    }
   }
   &__title {
     @extend .title;
     @extend .title--green;
+  }
+  &__column {
+    &--img {
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
   }
 }

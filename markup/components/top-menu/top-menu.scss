@@ -1,9 +1,29 @@
 .top-menu {
+  @media screen and (max-width: 1024px) {
+    order: 1;
+  }
+  &__mobile {
+    display: none;
+    @media screen and (max-width: 1024px) {
+      display: block;
+
+      width: 50px;
+
+      text-align: center;
+
+      color: $green;
+
+      font-size: 25px;
+    }
+  }
   &__list {
     display: flex;
 
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
   }
   &__item {
     padding: 10px 15px;
@@ -14,8 +34,9 @@
 
     font-size: 14px;
     span {
-      border-bottom: 1px dashed $green;
       padding-bottom: 3px;
+
+      border-bottom: 1px dashed $green;
     }
     &:hover {
       color: #fff;

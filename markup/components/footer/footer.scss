@@ -9,10 +9,14 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
   }
 }
 
 .footer-menu {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
   display: flex;
 
   justify-content: space-between;

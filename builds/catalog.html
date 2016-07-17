@@ -38,7 +38,8 @@
                     <div class="header__slogan">твой гид <span>по загрузкам</span>
                     </div>
                     <div class="top-menu">
-                        <div class="top-menu__mobile"></div>
+                        <div class="top-menu__mobile"><i class="fa fa-bars"></i>
+                        </div>
                         <div class="top-menu__list">
                             <a href="#" title="" class="top-menu__item"> <span>Фильмы</span>
                             </a>
@@ -61,7 +62,8 @@
                         </div>
                     </div>
                     <div class="search">
-                        <div class="search__mobile"></div>
+                        <div class="search__mobile"><i class="fa fa-search"></i>
+                        </div>
                         <div class="search__wrapper">
                             <input type="text" value="" placeholder="Поиск" class="search__input">
                             <div class="search__submit"><i class="fa fa-search"></i>
@@ -472,7 +474,25 @@
                     </div>
                 </div>
             </footer>
+            <div id="modal" class="modal">
+                <div class="registration-form">
+                    <div class="registration-form__left">
+                        <img src="static/images/content/registration.png" alt="">
+                    </div>
+                    <div class="registration-form__right">
+                        <div class="registration-form__title">Авторизация</div>
+                        <div class="registration-form__text">Для входа на сайт и снятия ограничений на скачивание файлов, введите номер мобильного телефона.</div>
+                        <label class="registration-form__label">Введите Ваш номер телефона ниже</label>
+                        <div class="registration-form__input">
+                            <input type="text" value="">
+                        </div><span class="registration-form__hint">Например: +79991115566</span>
+                        <input type="submit" value="Продолжить" class="registration-form__submit">
+                    </div>
+                </div>
+            </div>
+            <div class="mask"></div>
         </main>
+        <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
         <script src="static/js/main.min.js"></script>
     </body>
 

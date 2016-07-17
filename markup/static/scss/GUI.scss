@@ -4,6 +4,11 @@
 .wrapper {
   width: 1220px;
   margin: auto;
+  @media screen and (max-width: 1024px) {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .title {
@@ -86,9 +91,31 @@
     @extend .wrapper;
     justify-content: space-between;
     align-items: flex-start;
+    &--nobg {
+      padding: 0;
+      padding-bottom: 30px;
+
+      background: none;
+      box-shadow: none;
+
+      align-items: center;
+    }
   }
 }
 
 .left-sidebar {
   width: 276px;
+}
+
+.registration {
+  @extend .inside;
+  &__wrapper {
+    box-sizing: border-box;
+    padding: 20px;
+
+    background: #fff;
+    box-shadow: 0 0 8px rgba(#000, .13);
+
+    @extend .wrapper;
+  }
 }

@@ -38,7 +38,8 @@
                     <div class="header__slogan">твой гид <span>по загрузкам</span>
                     </div>
                     <div class="top-menu">
-                        <div class="top-menu__mobile"></div>
+                        <div class="top-menu__mobile"><i class="fa fa-bars"></i>
+                        </div>
                         <div class="top-menu__list">
                             <a href="#" title="" class="top-menu__item"> <span>Фильмы</span>
                             </a>
@@ -61,7 +62,8 @@
                         </div>
                     </div>
                     <div class="search">
-                        <div class="search__mobile"></div>
+                        <div class="search__mobile"><i class="fa fa-search"></i>
+                        </div>
                         <div class="search__wrapper">
                             <input type="text" value="" placeholder="Поиск" class="search__input">
                             <div class="search__submit"><i class="fa fa-search"></i>
@@ -72,6 +74,14 @@
                 </div>
             </header>
             <div class="inside">
+                <div class="inside__wrapper inside__wrapper--nobg">
+                    <div class="breadcrumbs">
+                        <a href="#" title="" class="breadcrumbs__item"> <i class="fa fa-bars"></i><span>Главная</span>
+                        </a>
+                        <a href="#" title="" class="breadcrumbs__item"> <i class="fa fa-ellipsis-v"></i><span>Результат поиска</span>
+                        </a>
+                    </div>
+                </div>
                 <div class="inside__wrapper">
                     <div class="left-sidebar">
                         <div class="film-poster">
@@ -134,13 +144,13 @@
                                 <p> <strong>Продолжительность: </strong>01:37:27</p>
                                 <p> <strong>Озвучивание: </strong>Дублированное [Чистый звук]</p>
                             </div>
-                            <div class="download-buttons"><a href="#" title="" class="download-button-green"><i class="fa fa-arrow-circle-o-down"></i>
-                    <div class="download-button-green__text"> <span>Скачать сейчас</span><span>на максимальной скорости</span></div></a><a href="#" title="" class="download-button-white"><i class="icon icon-torrent"></i>
-                    <div class="download-button-white__text"><span>Скачать .torrent</span><span>4560 сидов доступно</span></div></a>
-                            </div>
-                            <div class="novirus"><i class="icon icon-novirus"></i>
-                                <div class="novirus__text">Вирусов не обнаружено <span>Проверено 26/05/2015</span>
-                                </div>
+                        </div>
+                        <div class="download-buttons"><a href="#" title="" data-click="modal" data-modal="#modal" class="download-button-green"><i class="fa fa-arrow-circle-o-down"></i>
+                  <div class="download-button-green__text"> <span>Скачать сейчас</span><span>на максимальной скорости</span></div></a><a href="#" title="" data-click="modal" data-modal="#modal" class="download-button-white"><i class="icon icon-torrent"></i>
+                  <div class="download-button-white__text"><span>Скачать .torrent</span><span>4560 сидов доступно</span></div></a>
+                        </div>
+                        <div class="novirus"><i class="icon icon-novirus"></i>
+                            <div class="novirus__text">Вирусов не обнаружено <span>Проверено 26/05/2015</span>
                             </div>
                         </div>
                         <div class="content-block">
@@ -376,7 +386,25 @@
                     </div>
                 </div>
             </footer>
+            <div id="modal" class="modal">
+                <div class="registration-form">
+                    <div class="registration-form__left">
+                        <img src="static/images/content/registration.png" alt="">
+                    </div>
+                    <div class="registration-form__right">
+                        <div class="registration-form__title">Авторизация</div>
+                        <div class="registration-form__text">Для входа на сайт и снятия ограничений на скачивание файлов, введите номер мобильного телефона.</div>
+                        <label class="registration-form__label">Введите Ваш номер телефона ниже</label>
+                        <div class="registration-form__input">
+                            <input type="text" value="">
+                        </div><span class="registration-form__hint">Например: +79991115566</span>
+                        <input type="submit" value="Продолжить" class="registration-form__submit">
+                    </div>
+                </div>
+            </div>
+            <div class="mask"></div>
         </main>
+        <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js"></script>
         <script src="static/js/main.min.js"></script>
     </body>
 

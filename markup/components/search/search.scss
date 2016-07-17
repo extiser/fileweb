@@ -1,5 +1,27 @@
 .search {
   position: relative;
+  @media screen and (max-width: 1024px) {
+    order: 3;
+  }
+  &__mobile {
+    display: none;
+    @media screen and (max-width: 1024px) {
+      display: block;
+
+      width: 50px;
+
+      text-align: center;
+
+      color: $orange;
+
+      font-size: 25px;
+    }
+  }
+  &__wrapper {
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
   &__input {
     padding: 10px 20px;
 

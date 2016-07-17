@@ -1,0 +1,26 @@
+.file-support-horizontal {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  &__title {
+    display: flex;
+
+    padding-right: 30px;
+
+    color: rgba(#515151, .5);
+
+    font-size: 14px;
+    line-height: 1;
+
+    justify-content: flex-start;
+    align-items: center;
+    .fa {
+      margin-right: 10px;
+
+      vertical-align: middle;
+
+      font-size: 20px;
+    }
+  }
+}
