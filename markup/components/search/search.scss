@@ -1,5 +1,4 @@
 .search {
-  position: relative;
   @media screen and (max-width: 1024px) {
     order: 3;
   }
@@ -21,6 +20,19 @@
     @media screen and (max-width: 1024px) {
       display: none;
     }
+    &.active {
+      @media screen and (max-width: 1024px) {
+        position: absolute;
+        z-index: 2;
+        top: 87px;
+        right: 0;
+        left: 0;
+
+        display: block;
+
+        background: #fff;
+      }
+    }
   }
   &__input {
     padding: 10px 20px;
@@ -29,6 +41,9 @@
     border-radius: 5px;
 
     font-size: 14px;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
     &:focus {
       outline: none;
     }

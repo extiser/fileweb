@@ -1,5 +1,8 @@
 .content {
   width: 557px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
   &__category {
     text-transform: uppercase;
 
@@ -53,6 +56,10 @@
   margin: 25px 0;
 
   justify-content: space-between;
+
+  @media screen and (max-width: 320px) {
+   flex-wrap: wrap;
+  }
 }
 
 .download-button-green {
