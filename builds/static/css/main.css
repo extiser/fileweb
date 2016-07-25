@@ -3474,24 +3474,6 @@ body {
   color: #f3870d;
 }
 
-.breadcrumbs {
-  width: 100%;
-  font-size: 12px;
-}
-
-.breadcrumbs__item {
-  margin-right: 5px;
-  text-decoration: none;
-  color: rgba(33, 41, 46, 0.8);
-}
-
-.breadcrumbs__item .fa {
-  position: relative;
-  top: -1px;
-  margin-right: 5px;
-  font-size: 9px;
-}
-
 .catalog-list {
   padding: 30px 0 20px;
   background: url(../images/general/green-pattern.png) repeat;
@@ -3745,30 +3727,22 @@ body {
   margin-bottom: 10px;
 }
 
-.file-support {
-  margin-top: 40px;
-  margin-bottom: 100px;
-  padding: 30px 20px;
-  text-align: center;
-  background-color: #f7f7f7;
+.breadcrumbs {
+  width: 100%;
+  font-size: 12px;
 }
 
-.file-support__title {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #f3870d;
-  font-size: 14px;
+.breadcrumbs__item {
+  margin-right: 5px;
+  text-decoration: none;
+  color: rgba(33, 41, 46, 0.8);
 }
 
-.file-support__title .fa {
-  margin-right: 10px;
-  vertical-align: middle;
-  font-size: 20px;
-}
-
-.file-support img {
-  display: block;
-  margin: auto;
+.breadcrumbs__item .fa {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  font-size: 9px;
 }
 
 .file-support-horizontal {
@@ -4019,6 +3993,32 @@ body {
   color: #bebebe;
   font-size: 13px;
   font-weight: normal;
+}
+
+.file-support {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.file-support__title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f3870d;
+  font-size: 14px;
+}
+
+.file-support__title .fa {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.file-support img {
+  display: block;
+  margin: auto;
 }
 
 .landing-poster {
