@@ -26,18 +26,25 @@
     padding: 15px 20px;
   }
   &__title {
+    display: block;
+    overflow-y: hidden;
+
+    max-height: 90px;
+
     text-decoration: none;
 
     color: $black;
-    border-bottom: 1px solid $orange;
 
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
-    max-height: 100px;
-    overflow-y: hidden;
+    span {
+      border-bottom: 1px solid $orange;
+    }
     &:hover {
-      border-bottom: none;
+      span {
+        border-bottom: none;
+      }
     }
   }
   &__contents {
