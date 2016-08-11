@@ -34,6 +34,8 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
+    max-height: 100px;
+    overflow-y: hidden;
     &:hover {
       border-bottom: none;
     }
