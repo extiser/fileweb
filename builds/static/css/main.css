@@ -3401,8 +3401,10 @@ body {
 }
 
 .block {
+  position: relative;
   max-width: 190px;
   margin-top: 20px;
+  padding-bottom: 48px;
   border-radius: 5px;
   background: #fff;
 }
@@ -3445,6 +3447,8 @@ body {
 }
 
 .block__contents {
+  position: absolute;
+  bottom: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3521,6 +3525,24 @@ body {
 
 .catalog-list__item:hover {
   background: #cfcfcf;
+}
+
+.breadcrumbs {
+  width: 100%;
+  font-size: 12px;
+}
+
+.breadcrumbs__item {
+  margin-right: 5px;
+  text-decoration: none;
+  color: rgba(33, 41, 46, 0.8);
+}
+
+.breadcrumbs__item .fa {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  font-size: 9px;
 }
 
 .content {
@@ -3727,22 +3749,30 @@ body {
   margin-bottom: 10px;
 }
 
-.breadcrumbs {
-  width: 100%;
-  font-size: 12px;
+.file-support {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #f7f7f7;
 }
 
-.breadcrumbs__item {
-  margin-right: 5px;
-  text-decoration: none;
-  color: rgba(33, 41, 46, 0.8);
+.file-support__title {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f3870d;
+  font-size: 14px;
 }
 
-.breadcrumbs__item .fa {
-  position: relative;
-  top: -1px;
-  margin-right: 5px;
-  font-size: 9px;
+.file-support__title .fa {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.file-support img {
+  display: block;
+  margin: auto;
 }
 
 .file-support-horizontal {
@@ -3900,9 +3930,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 @media screen and (max-width: 1024px) {
@@ -3993,32 +4023,6 @@ body {
   color: #bebebe;
   font-size: 13px;
   font-weight: normal;
-}
-
-.file-support {
-  margin-top: 40px;
-  margin-bottom: 100px;
-  padding: 30px 20px;
-  text-align: center;
-  background-color: #f7f7f7;
-}
-
-.file-support__title {
-  margin-bottom: 20px;
-  text-align: center;
-  color: #f3870d;
-  font-size: 14px;
-}
-
-.file-support__title .fa {
-  margin-right: 10px;
-  vertical-align: middle;
-  font-size: 20px;
-}
-
-.file-support img {
-  display: block;
-  margin: auto;
 }
 
 .landing-poster {

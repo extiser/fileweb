@@ -1,6 +1,9 @@
 .block {
+  position: relative;
+
   max-width: 190px;
   margin-top: 20px;
+  padding-bottom: 48px;
 
   border-radius: 5px;
   background: #fff;
@@ -36,6 +39,9 @@
     }
   }
   &__contents {
+    position: absolute;
+    bottom: 15px;
+
     display: flex;
 
     margin-top: 15px;

@@ -7,7 +7,7 @@
 
     @extend .wrapper;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     @media screen and (max-width: 1024px) {
       flex-wrap: wrap;
     }
