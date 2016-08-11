@@ -4,16 +4,16 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-bottom"
+			],
+			[
 				"margin",
 				"margin-top"
 			],
 			[
 				"pad",
 				"padding-left"
-			],
-			[
-				"padd",
-				"padding"
 			],
 			[
 				"text",
@@ -591,10 +591,16 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/extiser/git/fileweb/markup"
+		"/Users/extiser/git/fileweb/markup",
+		"/Users/extiser/git/fileweb/markup/components",
+		"/Users/extiser/git/fileweb/markup/components/block",
+		"/Users/extiser/git/fileweb/markup/components/horizontal",
+		"/Users/extiser/git/fileweb/markup/pages"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/fileweb/markup/components/block/block.scss",
+		"/Users/extiser/git/fileweb/markup/components/horizontal/horizontal.scss",
 		"/Users/extiser/git/pokemon/markup/components/file/file.scss",
 		"/Users/extiser/git/pokemon/markup/components/file/file.jade",
 		"/Users/extiser/git/pokemon/markup/pages/index.jade",
@@ -720,9 +726,7 @@
 		"/Users/extiser/git/sovets-2015/markup/modules/footer/footer.scss",
 		"/Users/extiser/git/sovets-2015/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/sovets-2015/markup/modules/seo-text/seo-text.scss",
-		"/Users/extiser/git/sovets-2015/markup/modules/new-articles/new-articles.scss",
-		"/Users/extiser/git/sovets-2015/markup/modules/article-block/article-block.jade",
-		"/Users/extiser/git/sovets-2015/markup/modules/main-content/main-content.scss"
+		"/Users/extiser/git/sovets-2015/markup/modules/new-articles/new-articles.scss"
 	],
 	"find":
 	{

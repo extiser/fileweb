@@ -3478,6 +3478,24 @@ body {
   color: #f3870d;
 }
 
+.breadcrumbs {
+  width: 100%;
+  font-size: 12px;
+}
+
+.breadcrumbs__item {
+  margin-right: 5px;
+  text-decoration: none;
+  color: rgba(33, 41, 46, 0.8);
+}
+
+.breadcrumbs__item .fa {
+  position: relative;
+  top: -1px;
+  margin-right: 5px;
+  font-size: 9px;
+}
+
 .catalog-list {
   padding: 30px 0 20px;
   background: url(../images/general/green-pattern.png) repeat;
@@ -3525,24 +3543,6 @@ body {
 
 .catalog-list__item:hover {
   background: #cfcfcf;
-}
-
-.breadcrumbs {
-  width: 100%;
-  font-size: 12px;
-}
-
-.breadcrumbs__item {
-  margin-right: 5px;
-  text-decoration: none;
-  color: rgba(33, 41, 46, 0.8);
-}
-
-.breadcrumbs__item .fa {
-  position: relative;
-  top: -1px;
-  margin-right: 5px;
-  font-size: 9px;
 }
 
 .content {
@@ -4258,6 +4258,10 @@ body {
 
 .row-meta__likes {
   color: #f3870d;
+}
+
+.search {
+  position: relative;
 }
 
 @media screen and (max-width: 1024px) {
